@@ -1,9 +1,12 @@
 {
   "name": "plymouth",
   "version": "0.0.0",
+  "main": "desktop/main.js",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
+    "start": "npm-run-all -p open serve",
+    "serve": "ng serve",
+    "open": "wait-on tcp:4200 && npm run build:desktop && electron . --serve",
+    "build:desktop": "tsc -p tsconfig.desktop.json",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -27,12 +30,19 @@
     "@angular/cli": "~14.2.7",
     "@angular/compiler-cli": "^14.2.0",
     "@types/jasmine": "~4.0.0",
+    "autoprefixer": "^10.4.13",
+    "electron": "^22.0.0",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.2.0",
+    "karma-electron": "^7.3.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~4.7.2"
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4",
+    "typescript": "~4.7.2",
+    "wait-on": "^7.0.1"
   }
 }
