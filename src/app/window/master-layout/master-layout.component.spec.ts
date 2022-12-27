@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { MasterLayoutComponent } from './master-layout.component';
+import { MasterLayoutComponent } from './master-layout.component'
 
 describe('MasterLayoutComponent', () => {
   let component: MasterLayoutComponent;
