@@ -3,6 +3,8 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import './app/styles/form.scss';
+
 body {
   padding: 0;
   margin: 0;
@@ -10,6 +12,7 @@ body {
 }
 
 svg-icon {
+  padding: 4px;
   svg {
     height: 24px;
     width: 24px;

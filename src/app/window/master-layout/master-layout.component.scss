@@ -1,10 +1,10 @@
 :host {
   @apply flex flex-row justify-items-stretch h-screen;
   .main {
-    @apply flex-grow h-full bg-gray-800;
+    @apply flex-grow h-full;
   }
   [app-titlebar] {
-    height: 40px;
+    height: 48px;
     padding: 8px;
   }
 }
