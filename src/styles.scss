@@ -6,4 +6,5 @@
 body {
   padding: 0;
   margin: 0;
+  @apply bg-transparent dark:text-gray-400;
 }

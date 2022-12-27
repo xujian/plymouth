@@ -1,0 +1,6 @@
+:host {
+  @apply flex flex-row justify-items-stretch h-screen;
+  .main {
+    @apply flex-grow h-full bg-gray-800;
+  }
+}
